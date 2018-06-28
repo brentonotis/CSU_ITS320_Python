@@ -1,4 +1,4 @@
-# Write a Python Program that outputs this mouse:
+# Write a Python Program that outputs this mouse:c
 
 print("          (\\-, ")
 print("          /  _'>")
