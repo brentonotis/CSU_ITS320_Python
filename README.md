@@ -1,6 +1,6 @@
 # CSU ITS_320 Basic Programming Challenges/Projects/Assignments
 
-* ASIIC art
+* ASCII art
 * String manipulation
 * for loops/iterating over lists
 * if elif else
