@@ -2,7 +2,7 @@
 
 * ASIIC art
 * String manipulation
-* List manipulation
+* for loops/iterating over lists
 * if elif else
 * Robo convo
 * Reversed and concatenated
