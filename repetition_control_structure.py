@@ -1,8 +1,9 @@
-Write a program that utilizes a loop to read a set of five floating-point values from user input. 
+''' Write a program that utilizes a loop to read a set of five floating-point values from user input. 
 Ask the user to enter the values, then print the following data:
 
 Total, Average, Maximum, Minimum, Interest at 20% for each original value entered by the user 
 (use formula original value = original value + original value * .02)
+'''
 
 original_value = [float(x) for x in input('Enter 5 random numbers (seperated by spaces): ').split()]
 
