@@ -22,6 +22,7 @@ class Car_Inventory:
         self.color = color
         self.year = year
         self.mileage = mileage
+        self.vehicle_list = []
 
     def add_vehicle(self):
         FIXME
