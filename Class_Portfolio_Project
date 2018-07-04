@@ -23,8 +23,12 @@ class Car_Inventory:
         self.__year = year
         self.__mileage = mileage
         
-    def add_vehicle(self):
-        FIXME
+    def add_vehicle(self, make, model, color, year, mileage):
+        self.__make = str(input('Enter make: '))
+        self.__model = str(input('Enter model: '))
+        self.__color = str(input('Enter color: '))
+        self.__year = int(input('Enter year: '))
+        self.__mileage = int(input('Enter mileage: '))
 
     def remove_vehicle(self):
         FIXME
