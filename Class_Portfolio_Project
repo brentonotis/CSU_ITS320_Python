@@ -17,13 +17,12 @@ At the end of your program, it should allow the user to output all vehicle inven
 class Car_Inventory:
 
     def __init__(self, make, model, color, year, mileage):
-        self.make = make
-        self.model = model
-        self.color = color
-        self.year = year
-        self.mileage = mileage
-        self.vehicle_list = []
-
+        self.__make = make
+        self.__model = model
+        self.__color = color
+        self.__year = year
+        self.__mileage = mileage
+        
     def add_vehicle(self):
         FIXME
 
