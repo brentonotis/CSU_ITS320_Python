@@ -14,25 +14,22 @@ update vehicle attributes
 At the end of your program, it should allow the user to output all vehicle inventory to a text file.
 '''
 
-class Car_Inventory:
+inventory_list = []
 
-    def __init__(self, make, model, color, year, mileage):
-        self.__make = make
-        self.__model = model
-        self.__color = color
-        self.__year = year
-        self.__mileage = mileage
-        
-    def add_vehicle(self, make, model, color, year, mileage):
-        self.__make = str(input('Enter make: '))
-        self.__model = str(input('Enter model: '))
-        self.__color = str(input('Enter color: '))
-        self.__year = int(input('Enter year: '))
-        self.__mileage = int(input('Enter mileage: '))
-    
+class Car_Inventory():
+
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        return inventory_list.append(self)
+
     def __str__(self):
-        return str(self.__class__) + '\n' + '\n'.join((str(item) + ' = ' + str(self.__dict__[item]) 
+        return str(self.model)
 
+    def add_vehicle(self):
+        self.make = str(input('Enter make: '))
+        self.model = str(input('Enter model: '))
+               
     def remove_vehicle(self):
         FIXME
 
@@ -48,6 +45,7 @@ class Car_Inventory:
     def update_mileage(self):
         FIXME
 
+    def display(self):
+        FIXME
 
-if __name__ == '__main__':
-    main()
+    __repr__ = __str__
