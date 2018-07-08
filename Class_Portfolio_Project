@@ -34,19 +34,43 @@ class Automobile:
             if vehicle.get_model() == model:
                 Automobile.vehicle_list.remove(vehicle)
         
-    def update_make(self):
-        self.make = make
+    def get_make(self):
+        return self.__make
 
-    def update_model(self):
-        self.model = model
 
-    def update_year(self):
-        self.year = year
+    def get_model(self):
+        return self.__model
 
-    def update_mileage(self):
-        self.mileage = mileage
 
-    def display(self):
-        FIXME
+    def get_color(self):
+        return self.__color
+
+
+    def get_year(self):
+        return self.__year
+
+
+    def get_mileage(self):
+        return self.__mileage
+
+
+    def set_make(self, value):
+        self.__make = value
+
+
+    def set_model(self, value):
+        self.__model = value
+
+
+    def set_color(self, value):
+        self.__color = value
+
+
+    def set_year(self, value):
+        self.__year = value
+
+
+    def set_mileage(self, value):
+        self.__mileage = value
 
     __repr__ = __str__
