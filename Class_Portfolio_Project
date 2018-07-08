@@ -73,4 +73,15 @@ class Automobile:
     def set_mileage(self, value):
         self.__mileage = value
 
+    def __str__(self):
+        return "vehicle make: " + self.get_make() + " model: " + str(self.get_model()) + " color: " + self.get_color() + " year: " + str(self.get_year()) + " mileage: " + str(self.get_mileage())
+
+    def menu():
+        print("Select an option (enter an available integer below):")
+        print("1: Add vehicle")
+        print("2: Delete vehicle")
+        print("3: Export inventory to text file and exit program")
+        choice = input()
+        return choice 
+
     __repr__ = __str__
