@@ -31,19 +31,22 @@ class Car_Inventory():
         self.model = str(input('Enter model: '))
                
     def remove_vehicle(self):
-        FIXME
+        x = str(input('Enter model: '))
+        while x in inventory_list:
+            del x
+        print('%s deleted' % x)
 
     def update_make(self):
-        FIXME
+        self.make = make
 
     def update_model(self):
-        FIXME
+        self.model = model
 
     def update_year(self):
-        FIXME
+        self.year = year
 
     def update_mileage(self):
-        FIXME
+        self.mileage = mileage
 
     def display(self):
         FIXME
