@@ -76,12 +76,31 @@ class Automobile:
     def __str__(self):
         return "vehicle make: " + self.get_make() + " model: " + str(self.get_model()) + " color: " + self.get_color() + " year: " + str(self.get_year()) + " mileage: " + str(self.get_mileage())
 
-    def menu():
-        print("Select an option (enter an available integer below):")
-        print("1: Add vehicle")
-        print("2: Delete vehicle")
-        print("3: Export inventory to text file and exit program")
-        choice = input()
-        return choice 
+def menu():
+    print("Select an option (enter an available integer below):")
+    print("1: Add vehicle")
+    print("2: Delete vehicle")
+    print("3: Export inventory to text file and exit program")
+    choice = input()
+    return choice 
 
-    __repr__ = __str__
+def main():
+    while True:
+        choice = int(menu())
+        if choice == 1:
+            make = input("Enter vehicle make: ")
+            color = input("Enter vehicle color: ")
+            year = input("Enter vehicle year: ")
+            mileage = input("Enter vehicle mileage: ")
+            model = input("Enter vehicle model: ")
+            vehicle = Automobile(make, model, color, year, mileage)
+        elif choice == 2:
+            name = input("Enter vehicle model: ")
+            Automobile.delete_vehicle(model)
+        elif choice == 3:
+            file = open('inventory.txt', 'w')
+            for v in Automobile.vehicle_list:
+                file.write(str(v) + "\n")
+            break
+
+main()
