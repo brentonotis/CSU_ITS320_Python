@@ -29,12 +29,11 @@ class Automobile:
     def add_vehicle(vehicle):
         Automobile.vehicle_list.append(vehicle)
                
-    def remove_vehicle(self):
-        x = str(input('Enter model: '))
-        while x in inventory_list:
-            del x
-        print('%s deleted' % x)
-
+    def delete_vehicle(self):
+        for vehicle in Automobile.vehicle_list:
+            if vehicle.get_model() == model:
+                Automobile.vehicle_list.remove(vehicle)
+        
     def update_make(self):
         self.make = make
 
