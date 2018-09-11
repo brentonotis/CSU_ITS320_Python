@@ -1,4 +1,4 @@
-# CSU ITS_320 Basic Programming Challenges/Projects/Assignments
+# CSU ITS320 Basic Programming Challenges/Projects/Assignments
 
 * ASCII art
 * String manipulation
